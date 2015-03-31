@@ -8,36 +8,40 @@ if exists("syntax_on")
 	syntax reset
 endif
 set t_Co=256
-let colors_name = "itg_flat"
+let colors_name = "itg_flat_custom"
 
-hi Comment	    	guifg=#606a74    ctermfg=240    gui=none   		cterm=none
-hi Constant	    	guifg=#92e4c0    ctermfg=115    gui=none    	cterm=none
-hi Cursor	   	 	guibg=#f0e68c    ctermbg=255    guifg=#708090   ctermfg=242    	gui=none    cterm=none
-hi CursorLine					   	 ctermfg=none   guibg=#404040   ctermbg=237    	gui=none    cterm=none
-hi ColorColumn	    guifg=#e4e4e4    ctermfg=254    guibg=#cc4040   ctermbg=252    	gui=none    cterm=none
-hi Directory	    guifg=#008b8b    ctermfg=33    	gui=none    	cterm=none
-hi Folded	    	guibg=#262626    ctermbg=235    guifg=#8a8a8a   ctermfg=245    	gui=none    cterm=none
-hi Function	    	guifg=#92e4c0    ctermfg=115    gui=none    	cterm=none
-hi Identifier	    guifg=#e0e0e0    ctermfg=254    gui=none    	cterm=none
-hi LineNr	    	guifg=#606a74    ctermfg=240    gui=none    	cterm=none
-hi MatchParen	    guifg=#ccffcc    ctermfg=252    guibg=#008b8b   ctermbg=33    	gui=none    cterm=none
-hi Normal	    	guifg=#e4e4e4    ctermfg=254    guibg=#282a31   ctermbg=234    	gui=none    cterm=none
-hi NonText	    	guifg=#e4e4e4    ctermfg=254    guibg=#282a31   ctermbg=234    	gui=none    cterm=none
-hi Number	    	guifg=#92e4c0    ctermfg=115    gui=none    	cterm=none
-hi PreProc	    	guifg=#d1605e    ctermfg=167    gui=none    	cterm=none
-hi Search			guibg=#d7d7af 	 ctermbg=187	guifg=#000000	ctermfg=0
-hi Statement	    guifg=#d1605e    ctermfg=167    gui=none    	cterm=none
-hi Special	    	guifg=#e0e0e0    ctermfg=254    gui=none    	cterm=none
-hi SpecialKey	    guifg=#9acd32    ctermfg=247    gui=none    	cterm=none
-hi StatusLine	    guibg=#30323b    ctermbg=237    guifg=#e0e0e0   ctermfg=254    	gui=none    cterm=none
-hi StatusLineNC	    guibg=#30323b    ctermbg=237    guifg=#e0e0e0   ctermfg=254    	gui=none    cterm=none
-hi String	    	guifg=#ddc96d    ctermfg=185    gui=none    	cterm=none
-hi StorageClass	    guifg=#bdb76b    ctermfg=250    gui=none    	cterm=none
-hi Title	    	guifg=#e0e0e0    ctermfg=254    gui=none    	cterm=none
-hi Todo	    		guifg=#fffefc    ctermfg=226    gui=none    	cterm=none
-hi Type	    		guifg=#92e4c0    ctermfg=115    gui=none    	cterm=none
-hi Underlined	    guifg=#80a0ff    ctermfg=89    	gui=underline   cterm=underline
-hi VertSplit	    guibg=#2D2F36    ctermbg=236    guifg=#585858   ctermfg=240    	gui=none    cterm=none
-hi Visual	    	guifg=#f0e68c    ctermfg=255    guibg=#6b8e23   ctermbg=242    	gui=none    cterm=none
-hi MatchParen 		guibg=#30323b    ctermbg=236    guifg=#00afff   ctermfg=39
-hi Pmenu			guibg=#30323b	 ctermbg=237	guifg=#e0e0e0	ctermfg=254		gui=none	cterm=none
+hi Comment	                   ctermfg=240                  gui=none        cterm=none
+hi Constant	                   ctermfg=115                  gui=none        cterm=none
+hi Cursor	    ctermbg=255    ctermfg=242                  gui=none        cterm=none
+hi CursorLine	    ctermbg=237    ctermfg=none                 gui=none        cterm=none
+hi ColorColumn	    ctermbg=252    ctermfg=254                  gui=none        cterm=none
+hi Directory	                   ctermfg=33                   gui=none        cterm=none
+hi DiffAdd	    ctermbg=023                                gui=none        cterm=none
+hi DiffDelete	    ctermbg=088                                 gui=none        cterm=none
+hi DiffChange	    ctermbg=030                                 gui=none        cterm=none
+hi DiffText	    ctermbg=036                                 gui=none        cterm=none
+hi Folded	    ctermbg=235    ctermfg=245                  gui=none        cterm=none
+hi Function	                   ctermfg=115                  gui=none        cterm=none
+hi Identifier	                   ctermfg=254                  gui=none        cterm=none
+hi LineNr	                   ctermfg=240                  gui=none        cterm=none
+hi MatchParen	                   ctermfg=252    ctermbg=33    gui=none        cterm=none
+hi Normal	                   ctermfg=254    ctermbg=234   gui=none        cterm=none
+hi NonText	                   ctermfg=254    ctermbg=234   gui=none        cterm=none
+hi Number	                   ctermfg=115                  gui=none        cterm=none
+hi PreProc	                   ctermfg=167                  gui=none        cterm=none
+hi Search	    ctermbg=187    ctermfg=0
+hi Statement	                   ctermfg=167                  gui=none        cterm=none
+hi Special	                   ctermfg=254                  gui=none        cterm=none
+hi SpecialKey	                   ctermfg=247                  gui=none        cterm=none
+hi StatusLine	    ctermbg=237    ctermfg=254                  gui=none        cterm=none
+hi StatusLineNC	    ctermbg=237    ctermfg=254                  gui=none        cterm=none
+hi String	                   ctermfg=185                  gui=none        cterm=none
+hi StorageClass	                   ctermfg=250                  gui=none        cterm=none
+hi Title	                   ctermfg=254                  gui=none        cterm=none
+hi Todo	                           ctermfg=226                  gui=none        cterm=none
+hi Type	                           ctermfg=115                  gui=none        cterm=none
+hi Underlined	                   ctermfg=89                   gui=underline   cterm=underline
+hi VertSplit	    ctermbg=236    ctermfg=240                  gui=none        cterm=none
+hi Visual	    ctermbg=242    ctermfg=255                  gui=none        cterm=none
+hi MatchParen 	    ctermbg=236    ctermfg=39
+hi Pmenu	    ctermbg=237    ctermfg=254                  gui=none        cterm=none
